@@ -5,20 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-ul {
-    list-style-type:none ;
-    margin:  auto;
-    padding: 20;
-    overflow: auto;
+ul.a {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #333333;
 }
 
-li {
-    float: left;
+li.a {
+    float: right;
 
 }
 
-li a {
+li.a a {
     display: block;
     color: white;
 
@@ -27,18 +27,36 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li.a a:hover {
     background-color: #111111;
 }
 
+li.b {
+  float: left;
+}
+
+li.b a {
+  display: block;
+  color: white;
+
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+}
+
+li.b a:hover {
+    background-color: #111111;
+}
 </style>
 </head>
 <body>
-<ul class="w3-topnav">
-  <li><a href="google.com">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+<ul class="a">
+  <li class="a"><a href="google.com">Gallery</a></li>
+  <li class="a"><a href="#news">Blog</a></li>
+  <li class="a"><a href="#contact">About</a></li>
+  <li class="a"><a href="#about">Home</a></li>
+  <li class="b"><a>Pleazing</a></li>
 </ul>
+
 </body>
 </html>
