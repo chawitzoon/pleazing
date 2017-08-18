@@ -1,19 +1,20 @@
 body{
-  font-family: rockwell;
+  font-family: Yu Gothic Light;
   margin:0;
 }
 
-div.body1 {
+div.body1{
   margin-top: -16px;
   margin-bottom: -16px;
-  min-height: 500px;
-  background-image: url("pic2compressed.jpg");
-  background-position: center;
+  min-height: 600px;
+  background-image: url("pic.jpg");
+  background-size: 100% 100%;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-ul.a {
+ul.a{
     list-style-type:none;
     margin: 0;
     padding: 0;
@@ -21,12 +22,12 @@ ul.a {
     background-color: #333333;
 }
 
-li.a {
+li.a{
     float: right;
 
 }
 
-li.a a {
+li.a a{
     display: block;
     color: white;
 
@@ -35,15 +36,15 @@ li.a a {
     text-decoration: none;
 }
 
-li.a a:hover {
+li.a a:hover{
     background-color: #111111;
 }
 
-li.b {
+li.b{
   float: left;
 }
 
-li.b a {
+li.b a{
   display: block;
   color: white;
 
@@ -52,15 +53,35 @@ li.b a {
   text-decoration: none;
 }
 
-li.b a:hover {
+li.b a:hover{
     background-color: #111111;
 }
 
-.footer {
+.footer{
     padding: 10;
     color: white;
     background-color: #333333;
     clear: both;
     text-align: center;
     bottom:0;
-  }
+}
+
+.heading{
+  font-family: Rockwell;
+  font-size: 350%;
+  font-weight: bolder;
+  color: white;
+}
+
+.title{
+  font-family: rockwell;
+  font-size: 120%;
+  color: white;
+}
+
+.subtitle{
+  font-family: Yu Gothic Light;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+}
