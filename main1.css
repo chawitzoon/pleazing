@@ -3,6 +3,12 @@ body{
   margin:0;
   font-size: 100%;
 }
+#container{
+  width: 30px;
+  position: inherit;
+  left: 50em;
+  top: 23.135em;
+}
 
 div.body1{
   margin-top: -16px;
