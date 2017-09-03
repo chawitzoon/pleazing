@@ -27,7 +27,7 @@ div.body2{
   margin-bottom: -16px;
   min-height: 600px;
   background-image: url("sitepicture/pic1.jpg");
-  background-size:100% 100%;
+  background-size:cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
