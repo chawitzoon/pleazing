@@ -9,7 +9,7 @@ div.body1{
   margin-bottom: -16px;
   min-height: 600px;
   background-image: url("sitepicture/pic.jpg");
-  background-size:cover;
+  background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -119,4 +119,9 @@ li.b a:hover{
   padding-left: 20px;
   width: 300px;
   clear: none;
+}
+
+a i.fa{
+  text-decoration: none;
+  color:black;
 }
