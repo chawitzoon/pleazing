@@ -1,6 +1,7 @@
 body{
   font-family: Yu Gothic Light;
   margin:0;
+  font-size: 100%;
 }
 
 div.body1{
@@ -8,7 +9,7 @@ div.body1{
   margin-bottom: -16px;
   min-height: 600px;
   background-image: url("sitepicture/pic.jpg");
-  background-size:100% 100%;
+  background-size:cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,6 +52,7 @@ li.a a:hover{
     color: rgb(181, 137, 95);
     background-color: #111111;
     text-decoration: underline;
+    text-decoration: none;
 }
 
 li.b{
@@ -69,6 +71,7 @@ li.b a:hover{
     color: rgb(181, 137, 95);
     background-color: #111111;
     text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer{
