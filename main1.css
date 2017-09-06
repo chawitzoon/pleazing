@@ -1,6 +1,7 @@
 body{
   font-family: Yu Gothic Light;
   margin:0;
+  padding:0;
   font-size: 100%;
 }
 #container{
@@ -27,59 +28,96 @@ div.body2{
   margin-bottom: -16px;
   min-height: 600px;
   background-image: url("sitepicture/pic1.jpg");
-  background-size:100% 100%;
+  background-size:cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-ul.a{
-    list-style-type:none;
+.center{
+  width: 50%;
+  /*border:  3px solid green;*/
+  position: absolute;
+  left:25%;
+  top: 380px;
+}
+
+.floating-menu {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 50px;
+    border: 3px solid;
+    /*important*/
+    position: relative;
+}
+
+.link-spanner{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+
+/*#nav{
+  width: 100%;
+	float: right;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #333333;
+}*/
+ul.topnav {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     background-color: #333333;
+    width:100%;
 }
 
-li.a{
+ul.topnav li{
     float: right;
-
+    list-style-type: none;
 }
 
-li.a a{
+ul.topnav li a:not(.active){
     display: block;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     text-decoration: none;
 }
 
-li.a a:hover{
+ul.topnav li a:hover{
     color: rgb(181, 137, 95);
     background-color: #111111;
-    text-decoration: underline;
     text-decoration: none;
 }
 
-li.b{
-  float: right;
-}
 
-li.b a{
+ul.topnav li a.active{
   display: block;
   color: rgb(181, 137, 95);
   text-align: center;
-  padding: 30px;
+  padding: 25px;
   text-decoration: none;
 }
 
-li.b a:hover{
-    color: rgb(181, 137, 95);
-    background-color: #111111;
-    text-decoration: underline;
-    text-decoration: none;
+ul.topnav li.left{
+  padding:10px;
+  float:left;
 }
 
+@media screen and (max-width: 700px) {
+
+        ul.topnav li.left, ul.topnav li{
+        float: none;
+        text-align: center;
+      }
+}
 .footer{
     padding: 10;
     color: white;
@@ -94,12 +132,14 @@ li.b a:hover{
   font-size: 350%;
   font-weight: bolder;
   color: white;
+  text-align: center;
 }
 
 .title{
   font-family: rockwell;
   font-size: 120%;
   color: white;
+  text-align: center;
 }
 
 .subtitle1{
@@ -107,6 +147,7 @@ li.b a:hover{
   font-size: 100%;
   font-weight: bold;
   color: white;
+  text-align: center;
 }
 
 .subtitle{
@@ -114,6 +155,7 @@ li.b a:hover{
   font-size: 150%;
   font-weight: bold;
   color: white;
+  text-align: center;
 }
 
 .border{
@@ -125,6 +167,10 @@ li.b a:hover{
   padding-left: 20px;
   width: 300px;
   clear: none;
+}
+
+input:focus {
+    background-color: #333333;
 }
 
 a i.fa{
