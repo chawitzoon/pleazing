@@ -9,35 +9,41 @@
 
 <body>
 
-<div>
-  <div style="top:6px; left:22px; position: absolute;">
+<div style="position:fixed; z-index:9998;">
+  <!-- <div style="top:6px; left:22px; position: absolute;z-index:9999;">
     <img src="sitepicture/logo.png" alt="logo" width="70px">
-  </div>
-  <div style="top:0.625em; left:7.5em; position: absolute;">
-    <h2 style="style= font-weight:bold; font-family:rockwell; color:white">PLEAZING</h2>
-  </div>
-  <ul class="a">
-    <li class="a"><a href="gallery.html">Gallery</a></li>
-    <li class="a"><a href="blog.html">Blog</a></li>
-    <li class="a"><a href="about.html">About</a></li>
-    <li class="b"><a href="index.html">Home</a></li>
+  </div> -->
+  <!-- <div style="top:0.625em; left:7.5em; position: absolute;z-index:9999;">
+    <h2 style="font-weight:bold; font-family:rockwell; color:white">PLEAZING</h2>
+  </div> -->
+  <ul class="topnav" style="position:fixed; top:0; right:0">
+    <li class="left"><img style="vertical-align:middle;"src="sitepicture/logo.jpg" alt="logo" width="200px"></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
   </ul>
 </div>
-<div class="body1" >
-    <div style="top:23.125em; left:51.25em; position: absolute;"><h1 class="heading">PLEAZING</h1></div>
-    <div style="top:23.125em; left:56em; position: absolute;"><p class="title">site for pleasant</p></div>
-    <div style="top:29.375em; left:50em; position: absolute;"><p class="subtitle1">Welcome to my website.
-    here I would like to keep and share my pleasant memory and useful things.
-    17/8/2017</p></div>
+<div class="body1">
+  <div class="center">
+    <p class="title" style="line-height: 0.2;">site for pleasant</p>
+    <h1 class="heading" style="line-height: 0.2;">PLEAZING</h1>
+    <p class="subtitle1" style="line-height: 1.5;">Welcome to my website.
+      here I would like to keep and share my pleasant memory and useful things.
+      17/8/2017</p>
+  </div>
 <p>
 
 </p>
 </div>
 
-<div style="height:500px;background-color:rgb(181, 137, 95); overflow:hidden;">
- <h1 class="subtitle" style="text-align:center;">Sharing stuff</h1>
- <!-- <img src="sitepicture/pic1.jpg" alt="blog" width="400px" height="auto" style="position: center;">
- <img src="sitepicture/pic2.jpg" alt="gallery" width="400px" height="auto" style="float:center;"> -->
+<div style="background-color:rgb(181, 137, 95); overflow:hidden;">
+<h1 class="subtitle" style="text-align:center;">Sharing stuff</h1>
+<div style="margin:auto;">
+  <div class="floating-menu"><img src="sitepicture/about.jpg" alt="About" width="200" height="200"><br><p style="text-align:center;">About</p><a href="about.html"><span class="link-spanner"></span></a></div>
+  <div class="floating-menu"><img src="sitepicture/blog.jpg" alt="Blogt" width="200" height="200"><br><p style="text-align:center;">Blog</p><a href="blog.html"><span class="link-spanner"></span></a></div>
+  <div class="floating-menu"><img src="sitepicture/gallery.jpg" alt="Gallery" width="200" height="200"><br><p style="text-align:center;">Gallery</p><a href="gallery.html"><span class="link-spanner"></span></a></div>
+</div>
 </div>
 
 <div class="body2">
@@ -45,7 +51,7 @@
 </div>
 <div style="height:400px;background-color:rgb(181, 137, 95); overflow:hidden;">
 <h2 class="title" style="text-align:center;">contact</h2>
-  <div class="border"style="text-align:center;"><form action="/action_page.php" autocomplete="on">
+  <div class="border focus"style="text-align:center;"><form action="/action_page.php" autocomplete="on">
   <input type="text" name="fname" placeholder="Firstname" width="150" style="border-style:solid;"><br>
   <input type="text" name="lname" placeholder="Lastname" width="150" style="border-style:solid;"><br>
   <input type="email" name="email" autocomplete="off" placeholder="E-mail" width="150" style="border-style:solid;"><br>
