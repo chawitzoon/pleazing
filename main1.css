@@ -73,7 +73,7 @@ ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: auto;
+    overflow: visible;
     background-color: #333333;
     width:100%;
 }
@@ -81,29 +81,56 @@ ul.topnav {
 ul.topnav li{
     float: right;
     list-style-type: none;
+    width: auto;
 }
 
 ul.topnav li a:not(.active){
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 25px;
     text-decoration: none;
 }
 
-ul.topnav li a:hover{
+ul.topnav li a:hover, li.dropdown:hover a.dropbtn{
     color: rgb(181, 137, 95);
     background-color: #111111;
     text-decoration: none;
 }
 
+li.dropdown{
+  display: inline-block;
+}
 
 ul.topnav li a.active{
-  display: block;
+  display: inline-block;
   color: rgb(181, 137, 95);
   text-align: center;
   padding: 25px;
   text-decoration: none;
+}
+
+div.dropdown-content{
+  display: none;
+  position: absolute;
+  /*background-color: inherit;*/
+  width: inherit;
+  box-shadow: 0px 8px 16px 0px rgba(0 ,0, 0, 0.5);
+  z-index: 9999;
+}
+
+ .dropdown-content a{
+  color:black;
+  padding:40px;
+  text-decoration: none;
+  text-align: center;
+}
+.dropdown-content a:hover{
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
 }
 
 ul.topnav li.left{
@@ -113,20 +140,41 @@ ul.topnav li.left{
 
 @media screen and (max-width: 700px) {
 
+      ul.topnav li.left{
+        float: none;
+        text-align: center;
+      }
+      ul.topnav li:not(.left){
+        display: none;
+        position: relative;
+        overflow: visible;
+        float: none;
+        text-align: center;
+      }
+      ul.topnav:hover li:not(.left){
+        float:none;
+        display: block;
+        overflow: visible;
+      }
+      .dropdown:hover .dropdown-content{
+        display: none;
+      }
+}
+/*@media screen and (max-width: 700px) {
+
         ul.topnav li.left, ul.topnav li{
         float: none;
         text-align: center;
       }
-}
+}*/
 .footer{
     padding: 10;
     color: white;
     background-color: #333333;
     clear: both;
     text-align: center;
-    bottom:0;
+    width: 100%;
 }
-
 .heading{
   font-family: Rockwell;
   font-size: 350%;
