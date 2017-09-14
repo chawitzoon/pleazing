@@ -1,3 +1,55 @@
+
+.topcontainer {
+  position: relative;
+  width: 32.3%;
+  margin: 0.4%;
+  float:left;
+}
+.topimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.topoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.topcontainer:hover .topoverlay {
+  width: 100%;
+}
+
+.toptext {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 div.gallery {
     border: 1px solid #ccc;
 }
