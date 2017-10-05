@@ -14,7 +14,7 @@ section { overflow: hidden; padding-top: 75px;}
 
 
 div.body1{
-  margin-top: -16px;
+  margin-top: -20px;
   margin-bottom: -16px;
   min-height: 600px;
   background-image: url("sitepicture/pic.jpg");
@@ -26,6 +26,7 @@ div.body1{
 }
 
 div.body2{
+  margin-top:-6px;
   margin-bottom: -16px;
   min-height: 470px;
   background-image: url("sitepicture/pic1.jpg");
@@ -33,6 +34,10 @@ div.body2{
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .center{
